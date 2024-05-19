@@ -1,0 +1,24 @@
+.footer
+  background-color: $color-blue-dark
+  grid-column: full-start / full-end
+  padding: 8rem 0
+  border-top: .3rem solid $color-gray-light
+  &__logo-img
+    display: block
+    margin: 0 auto 8rem
+  &__menu
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr))
+    gap: 3rem
+    list-style: none
+  &__menu-item
+    text-align: center
+  &__menu-link
+    font-weight: 300
+    font-size: 1.6rem
+    text-align: center
+    color: $color-gray-light
+    text-decoration: none
+    transition: .3s background-color
+    &:hover
+      background-color: $color-green-dark
